@@ -1,10 +1,10 @@
 # Angular-basic-notes
-My Angular 8+ Notes.......
+My Angular 8+ Notes.<br />
 This repository is notes of my angular 8 journey.I will write everthing that I learn, Maybe this repository guide you too.
 
 ## SECTION 1: INTRODUCTION
 
-* Angular creates single page web apps. As the users browses the app, content is dynamically loaded into the html using Javascript. (Without changing url)
+* Angular 8 is a client-side TypeScript based framework which is used to create dynamic web applications. It is very similar to its previous versions except having some extensive features.
 * src folder is where the work happens. Assets folder can be used to store static files like images etc, app folder is for the app code. and the environments folder can be used to store needed variables
 * In Angular we use components to build up the page
 * with [(ngModel)]="" you can bind something to a property of the component.ts, which is connected to the html file. the .html is what you see, while the .ts is the logic behind it
@@ -41,7 +41,7 @@ This repository is notes of my angular 8 journey.I will write everthing that I l
 * @NgModuyle has declarations. This is where you can declare new components to be used
 * Added components need to be imported into the module
 * 'imports' in @NgModule let's you import other modules into this one. To make this one a bit leaner and outsource some stuff
-* You can create components using the cli with 'ng generate component name'. This creates the folder structure within the app folder with the component files
+* You can create components using the cli with `'ng generate component name'` or `'ng g c name'`. This creates the folder structure within the app folder with the component files
 * You can nest components by calling their selector in a html template, and then calling the component to which that html belongs again in another component
 * Each component has to have a template or a templateUrl defined. Depending if you want a seperate template or inline templateUrl. Styles and selectors are optional, but template/templateUI isn't
 * Styles can be defined inline or externally by using styleUrls. StyleUrls is an array so you can use multiple external stylesheets
