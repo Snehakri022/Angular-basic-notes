@@ -144,3 +144,35 @@ getColor() {
 * `<app-server *ngFor="let server of servers"></app-server>`, this loops through server and assign a <app-server> component for each in the array
 * `*ngFor="let logItem of log; let i = index"` this gives you access to the index of the current iteration, when looping an array
 
+## SECTION 3: Course project - The Basics
+
+* in .angular-cli.json you can define which files are bundled, css etc
+*` ng generate(g) component(c) --spec false` let's your create a component folder through the cli
+* (TYPESCRIPT) A model is a typescript file which holds a model of an object, a blueprint for an object we create
+* (TYPESCRIPT) `public name: string;` this let's the export class know that the property can be accessed by anyone, the string indicates what type of value it holds
+* (TYPESCRIPT) a constructor is a build in function each class has that initializes upon creating the class
+* `[src]="recipe.imagePath"` and `src="{{recipe.imagePath}}"` would both work, one is property binding and one is string interpolation
+* You can use make a TS model using a shortcut like so;
+```
+export class Ingredient {
+    constructor(public name: string, public amount: number) {}
+}
+```
+
+## SECTION 4: Debugging
+
+### Console
+
+* If an error occurs when you try to fire an event, the bug is probably in a method that you're trying to call at that moment
+* If something is undefined you have to set a property to something. doing `servers;` doesn't let it know what it is. Use `servers = [];` instead
+
+### Debugging in browser using Sourcemaps
+
+* Sourcemaps allow the browser to change JS code to typescript, or map the javascript to our Typescript files
+* Open Sourcemaps by clicking on the line number in the javascript file in sources
+* In sources and in the webpack folder, then the . folder, you can find all your typescript files for debugging
+
+### Angular Augury
+
+* Augury allows you to dive into your Angular application and see the components etc.
+
