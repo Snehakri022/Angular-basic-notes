@@ -107,8 +107,8 @@ This repository is notes of my angular 8 journey.I will write everthing that I l
 
 * ngIf directive allows you to conditionally output data
 * Use a `*` symbol (#ngIf) before a directive when it changes something in the structure of the DOM. Either adding or removing elements
-* #ngIf requires a true/false. `#nfIg="true/false"` or an expression that returns true or false
-* nfIf adds or removes elements from the DOM, it doesn't just hide them
+* #ngIf requires a true/false. `#ngIf="true/false"` or an expression that returns true or false
+* ngIf adds or removes elements from the DOM, it doesn't just hide them
 * if looping through an array with ngIf, the ngIf needs to be in the ngFor, meaning in a child element etc
 * Using a marker you can set an else for the ngIf:
 
